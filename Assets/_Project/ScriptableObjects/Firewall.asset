@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90126319c80483a4ca36502790cc98c6, type: 3}
+  m_Name: Firewall
+  m_EditorClassIdentifier: Assembly-CSharp::PassiveModifier
+  icon: {fileID: 21300000, guid: 8ceb0bd645e6672499bcd95a24c765d9, type: 3}
+  upgrades:
+  - type: 8
+    description: Reduces damage taken by 2%
+    value: 2
+    unit: 0
+  - type: 8
+    description: Reduces damage taken by 3%
+    value: 3
+    unit: 0
+  - type: 8
+    description: Reduces damage taken by 5%
+    value: 5
+    unit: 0
+  - type: 8
+    description: Reduces damage taken by 7%
+    value: 7
+    unit: 0
+  - type: 8
+    description: Reduces damage taken by 13%
+    value: 13
+    unit: 0
+  - type: 8
+    description: Reduces damage taken by 20%
+    value: 20
+    unit: 0

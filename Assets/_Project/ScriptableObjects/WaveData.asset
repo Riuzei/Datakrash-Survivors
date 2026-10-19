@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f0abdd674a36e489e8389fdb72f218, type: 3}
+  m_Name: WaveData
+  m_EditorClassIdentifier: Assembly-CSharp::WaveData
+  waves:
+  - startTime: 0
+    spawnInterval: 0.5
+    entries:
+    - enemyType: 0
+      weight: 100
+  - startTime: 100
+    spawnInterval: 1
+    entries:
+    - enemyType: 1
+      weight: 90
+    - enemyType: 0
+      weight: 10
+  - startTime: 200
+    spawnInterval: 1
+    entries:
+    - enemyType: 0
+      weight: 50
+    - enemyType: 1
+      weight: 50
+  - startTime: 300
+    spawnInterval: 1
+    entries:
+    - enemyType: 0
+      weight: 40
+    - enemyType: 1
+      weight: 40
+    - enemyType: 2
+      weight: 20

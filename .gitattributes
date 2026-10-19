@@ -1,0 +1,209 @@
+###############################################################################
+# .gitattributes for Unity Projects (2025 Best Practices)
+# Based on GameCI, Hextant Studios, and community refinements
+# Ensures correct text handling, UnityYAMLMerge, and LFS tracking
+###############################################################################
+
+# Normalize line endings for text files
+* text=auto
+
+# Source control friendly merges for C# scripts
+*.cs text diff=csharp eol=lf
+
+###############################################################################
+# --- Attribute Macros ---
+###############################################################################
+[attr]lfs               filter=lfs diff=lfs merge=lfs -text
+[attr]unity-json        eol=lf linguist-language=json
+[attr]unity-yaml        merge=unityyamlmerge eol=lf linguist-language=yaml
+
+###############################################################################
+# --- Unity Source Files ---
+###############################################################################
+*.cginc                 text eol=lf
+*.compute               text linguist-language=hlsl eol=lf
+*.hlsl                  text linguist-language=hlsl eol=lf
+*.raytrace              text linguist-language=hlsl eol=lf
+*.shader                text eol=lf
+
+###############################################################################
+# --- Unity JSON Files ---
+###############################################################################
+*.asmdef                unity-json
+*.asmref                unity-json
+*.index                 unity-json
+*.inputactions          unity-json
+*.shadergraph           unity-json
+*.shadersubgraph        unity-json
+
+###############################################################################
+# --- Unity UI Toolkit Files ---
+###############################################################################
+*.tss                   text diff=css linguist-language=css eol=lf
+*.uss                   text diff=css linguist-language=css eol=lf
+*.uxml                  text linguist-language=xml linguist-detectable eol=lf
+
+###############################################################################
+# --- Unity YAML Files ---
+###############################################################################
+*.anim                  unity-yaml
+*.asset                 unity-yaml
+*.brush                 unity-yaml
+*.controller            unity-yaml
+*.flare                 unity-yaml
+*.fontsettings          unity-yaml
+*.giparams              unity-yaml
+*.guiskin               unity-yaml
+*.lighting              unity-yaml
+*.mask                  unity-yaml
+*.mat                   unity-yaml
+*.meta                  unity-yaml
+*.mixer                 unity-yaml
+*.overrideController    unity-yaml
+*.playable              unity-yaml
+*.prefab                unity-yaml
+*.prefabvariant         unity-yaml
+*.preset                unity-yaml
+*.renderTexture         unity-yaml
+*.scenetemplate         unity-yaml
+*.shadervariants        unity-yaml
+*.signal                unity-yaml
+*.spriteatlas           unity-yaml
+*.spriteatlasv2         unity-yaml
+*.terrainlayer          unity-yaml
+*.unity                 unity-yaml
+*.physicMaterial        unity-yaml
+*.physicsMaterial2D     unity-yaml
+
+###############################################################################
+# --- Unity Baked Data / Special Binary Assets ---
+###############################################################################
+LightingData.asset          lfs
+*NavMesh-*.asset            lfs
+*TerrainData.asset          lfs
+*LightProbes.asset          lfs
+*ReflectionProbe-*.asset    lfs
+*OcclusionCullingData.asset lfs
+
+###############################################################################
+# --- Third-Party & Generated ---
+###############################################################################
+Assets/Plugins/**           linguist-generated
+Packages/packages-lock.json linguist-generated
+
+###############################################################################
+# --- Large Binary Files for LFS ---
+###############################################################################
+# Unity Packages
+*.cubemap               lfs
+*.unitypackage          lfs
+
+# 3D Models
+*.3dm                   lfs
+*.3ds                   lfs
+*.abc                   lfs
+*.blend                 lfs
+*.blend1                lfs
+*.c4d                   lfs
+*.collada               lfs
+*.dae                   lfs
+*.dxf                   lfs
+*.FBX                   lfs
+*.fbx                   lfs
+*.glb                   lfs
+*.gltf                  lfs
+*.jas                   lfs
+*.lws                   lfs
+*.lxo                   lfs
+*.ma                    lfs
+*.max                   lfs
+*.mb                    lfs
+*.obj                   lfs
+*.ply                   lfs
+*.skp                   lfs
+*.stl                   lfs
+*.ztl                   lfs
+
+# Audio
+*.aif                   lfs
+*.aiff                  lfs
+*.it                    lfs
+*.mod                   lfs
+*.mp3                   lfs
+*.ogg                   lfs
+*.s3m                   lfs
+*.wav                   lfs
+*.xm                    lfs
+
+# Video
+*.asf                   lfs
+*.avi                   lfs
+*.flv                   lfs
+*.mov                   lfs
+*.mp4                   lfs
+*.mpeg                  lfs
+*.mpg                   lfs
+*.ogv                   lfs
+*.wmv                   lfs
+
+# Images
+*.bmp                   lfs
+*.dds                   lfs
+*.exr                   lfs
+*.gif                   lfs
+*.hdr                   lfs
+*.iff                   lfs
+*.jpeg                  lfs
+*.jpg                   lfs
+*.pict                  lfs
+*.png                   lfs
+*.psd                   lfs
+*.svg                   lfs
+*.tga                   lfs
+*.tif                   lfs
+*.tiff                  lfs
+*.webp                  lfs
+
+# Fonts
+*.otf                   lfs
+*.ttf                   lfs
+
+# Archives / Packages
+*.7z                    lfs
+*.bz2                   lfs
+*.gz                    lfs
+*.rar                   lfs
+*.tar                   lfs
+*.zip                   lfs
+
+# Binaries / Libraries
+*.dll                   lfs
+*.pdb                   lfs
+*.so                    lfs
+*.a                     lfs
+
+# Executables
+*.apk                   lfs
+*.exe                   lfs
+
+# Documents
+*.pdf                   lfs
+
+# Misc creative assets
+*.rns                   lfs
+*.reason                lfs
+
+# Spine exports
+*.skel.bytes            lfs
+
+###############################################################################
+# --- Optional: Build Output & AssetBundles ---
+###############################################################################
+Build/**                lfs
+StreamingAssets/**      lfs
+*.ab                    lfs
+*.bundle                lfs
+
+###############################################################################
+# END OF FILE
+###############################################################################

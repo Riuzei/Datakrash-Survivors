@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f54247665f24d344990e4bf77c59242, type: 3}
+  m_Name: GamePrefabs
+  m_EditorClassIdentifier: Assembly-CSharp::GamePrefabs
+  playerPrefab: {fileID: 2277845953357693966, guid: 16b779f286735d14e9221da39aa09ddd, type: 3}
+  enemyRedPrefab: {fileID: 6095665772847043936, guid: 2810f8aa94879dd458bf4629b971ece1, type: 3}
+  enemyGreenPrefab: {fileID: 4447724393422849517, guid: ed5ebba50810cea43bedf2cd80f20d39, type: 3}
+  enemyBluePrefab: {fileID: 4721711822350616186, guid: ea63d079e9b3e3e4f9e889959f0fed5b, type: 3}
+  orbitWeaponPrefab: {fileID: 256272806711736090, guid: 668c56c368941b248b8538d9b168d50f, type: 3}
+  commonGem: {fileID: 7879714757331074595, guid: 349f782eef109cf4183649fe12730ba7, type: 3}
+  rareGem: {fileID: 7929570959444198508, guid: e347af2c771078f479968d2e80c3393d, type: 3}
+  legendaryGem: {fileID: 6481719249323305585, guid: 70aaf5e1d49f23b4b8aef9ce1332feee, type: 3}
+  healPickup: {fileID: 7498665201833417256, guid: 2ac5fc739a15bff43be4758b8becf24e, type: 3}
+  healVFX: {fileID: 2500015006283702749, guid: de7e25aae01da63408fc4734f9f33506, type: 3}

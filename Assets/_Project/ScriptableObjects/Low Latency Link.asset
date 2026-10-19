@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90126319c80483a4ca36502790cc98c6, type: 3}
+  m_Name: Low Latency Link
+  m_EditorClassIdentifier: Assembly-CSharp::PassiveModifier
+  icon: {fileID: 21300000, guid: a77284bdc7f927945b23fb1a225e0c4e, type: 3}
+  upgrades:
+  - type: 4
+    description: Increase 5% of Move Speed
+    value: 5
+    unit: 0
+  - type: 4
+    description: Increase 10% of Move Speed
+    value: 10
+    unit: 0
+  - type: 4
+    description: Increase 15% of Move Speed
+    value: 15
+    unit: 0
+  - type: 4
+    description: Increase 20% of Move Speed
+    value: 20
+    unit: 0
